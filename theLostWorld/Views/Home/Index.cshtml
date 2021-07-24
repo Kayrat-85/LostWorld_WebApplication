@@ -1,0 +1,419 @@
+﻿@{
+    ViewData["Title"] = "Lost World";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <wbr>
+    <div class="container">
+        <!-- Карусель - Палеозойская Эра-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-outline-dark">
+                        Палеозойская Эра<br>
+                        от 541 до 251,902 млн. лет тому назад
+                    </button>
+                </div>
+
+                <!-- Carousel wrapper -->
+                <div id="carouselExampleCaptions"
+                     class="carousel slide"
+                     data-mdb-ride="carousel">
+                    <!-- Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button"
+                                data-mdb-target="#carouselExampleCaptions"
+                                data-mdb-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1">
+                        </button>
+                        <button type="button"
+                                data-mdb-target="#carouselExampleCaptions"
+                                data-mdb-slide-to="1"
+                                aria-label="Slide 2">
+                        </button>
+                        <button type="button"
+                                data-mdb-target="#carouselExampleCaptions"
+                                data-mdb-slide-to="2"
+                                aria-label="Slide 3">
+                        </button>
+                    </div>
+
+                    <!-- Inner -->
+                    <div class="carousel-inner">
+                        <!-- Single item -->
+                        <div class="carousel-item active">
+                            <a asp-area="" asp-controller="Paleozoic_Era" asp-action="Cambrian_period">
+                                <img src="~/Images/Paleozoic_Era/Cambrian_period01.jpg"
+                                     class="d-block w-100"
+                                     alt="Место для изображения" />
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Кембрийский период</h5>
+                                <p>
+                                    Кембрийский период (кембрий) — геологический период, с которого начались палеозойская эра
+                                    и весь фанерозойский эон. Начался 541,0 и закончился 485,4 млн лет назад. Продолжался,
+                                    примерно 56 млн лет.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Single item -->
+                        <div class="carousel-item">
+                            <a asp-area="" asp-controller="Paleozoic_Era" asp-action="Ordovician_period">
+                                <img src="~/Images/Paleozoic_Era/Ordovician-Period.jpg"
+                                     class="d-block w-100"
+                                     alt="Место для изображения" />
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Ордовикский период</h5>
+                                <p>
+                                    Ордовикский период -второй период палеозойской эры. Наступил за
+                                    кембрийским периодом и сменился силурийским. Продолжался от 485.4
+                                    до 443.8 млн лет назад (около 42 млн лет).
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Single item -->
+                        <div class="carousel-item">
+                            <a asp-area="" asp-controller="Paleozoic_Era" asp-action="Silurian_period">
+                                <img src="~/Images/Paleozoic_Era/Silurian_Period01.jpg"
+                                     class="d-block w-100"
+                                     alt="Место для изображения" />
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Силурийский период</h5>
+                                <p>
+                                    Силурийский период (силур) — геологический период, третий период палеозоя.
+                                    Наступил после ордовика и сменился девоном. Начался 443.8 и закончился 419.2
+                                    млн лет назад . Продолжался, таким образом, около 25 млн лет.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inner -->
+                <!-- Controls -->
+                <button class="carousel-control-prev"
+                        type="button"
+                        data-mdb-target="#carouselExampleCaptions"
+                        data-mdb-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next"
+                        type="button"
+                        data-mdb-target="#carouselExampleCaptions"
+                        data-mdb-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Carousel wrapper -->
+        </div>
+        <wbr>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-mdb-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button"
+                                data-mdb-target="#carouselExampleIndicators"
+                                data-mdb-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1">
+                        </button>
+                        <button type="button"
+                                data-mdb-target="#carouselExampleIndicators"
+                                data-mdb-slide-to="1"
+                                aria-label="Slide 2">
+                        </button>
+                        <button type="button"
+                                data-mdb-target="#carouselExampleIndicators"
+                                data-mdb-slide-to="2"
+                                aria-label="Slide 3">
+                        </button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a asp-area="" asp-controller="Paleozoic_Era" asp-action="Devonian_period">
+                                <img src="~/Images/Paleozoic_Era/Devonian_period01.jpg"
+                                     class="d-block w-100"
+                                     alt="Место для изображения" />
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Девонский период</h5>
+                                <p>
+                                    Девонский период - четвёртый геологический период палеозойской эры.
+                                    Начался 419.2 и закончился 358.9 млн лет назад. Длительность 60 млн лет.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a asp-area="" asp-controller="Paleozoic_Era" asp-action="Carboniferous_period">
+                                <img src="~/Images/Paleozoic_Era/Carboniferous_period01.jpg"
+                                     class="d-block w-100"
+                                     alt="Место для изображения" />
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Каменноугольный период</h5>
+                                <p>
+                                    Каменноугольный период - предпоследний (пятый) геологический период
+                                    палеозойской эры. Начался 358.9 и закончился 298.9 млн лет назад.
+                                    Длительность 60 млн лет
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a asp-area="" asp-controller="Paleozoic_Era" asp-action="Permian_period">
+                                <img src="~/Images/Paleozoic_Era/Permian_period01.jpg"
+                                     class="d-block w-100"
+                                     alt="Место для изображения" />
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Пермский период</h5>
+                                <p>
+                                    Пермский период - последний геологический период палеозойской эры.
+                                    Начался 298,9 251.9 млн лет назад и завершился 251.9 млн лет назад.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev"
+                            type="button"
+                            data-mdb-target="#carouselExampleIndicators"
+                            data-mdb-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next"
+                            type="button"
+                            data-mdb-target="#carouselExampleIndicators"
+                            data-mdb-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Карусель - Мезозойская Эра-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-outline-info">
+                        Мезозойская эра<br>
+                        от 251,902 до 66,0 млн. лет тому назад
+                    </button>
+                </div>
+                <!-- Carousel wrapper -->
+                <div id="carouselBasicExample"
+                     class="carousel slide carousel-fade"
+                     data-mdb-ride="carousel">
+                    <!-- Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button"
+                                data-mdb-target="#carouselBasicExample"
+                                data-mdb-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1">
+                        </button>
+                        <button type="button"
+                                data-mdb-target="#carouselBasicExample"
+                                data-mdb-slide-to="1"
+                                aria-label="Slide 2">
+                        </button>
+                        <button type="button"
+                                data-mdb-target="#carouselBasicExample"
+                                data-mdb-slide-to="2"
+                                aria-label="Slide 3">
+                        </button>
+                    </div>
+
+                    <!-- Inner -->
+                    <div class="carousel-inner">
+                        <!-- Single item -->
+                        <div class="carousel-item active">
+                            <a asp-area="" asp-controller="Mesozoic_Era" asp-action="Triassic_period">
+                                <img src="~/Images/Triassic_period/TriassicPeriod_heading1.jpg"
+                                     class="d-block w-100"
+                                     alt="Место для изображения" />
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Триасовый период</h5>
+                                <p>
+                                    Триасовый период: 250-200 миллионов лет назад.
+                                    Первый геологический период мезозойской эры.
+                                    Следует за пермским периодом и предшествует юрскому.
+                                    Это восход эпохи динозавров.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Single item -->
+                        <div class="carousel-item">
+                            <a asp-area="" asp-controller="Mesozoic_Era" asp-action="Jurassic_period">
+                                <img src="~/Images/Jurassic_period/JurassicPeriod_heading1.jpg"
+                                     class="d-block w-100"
+                                     alt="Место для изображения" />
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Юрский период</h5>
+                                <p>
+                                    Юрский период: 200-145 миллионов лет назад.
+                                    Средний (второй) период мезозойской эры.
+                                    Продолжался, таким образом, около 56 млн лет.
+                                    Золотая эпоха динозавров.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Single item -->
+                        <div class="carousel-item">
+                            <a asp-area="" asp-controller="Mesozoic_Era" asp-action="Cretaceous_period">
+                                <img src="~/Images/Cretaceous_period/CretaceousPeriod_heading1.jpg"
+                                     class="d-block w-100"
+                                     alt="Место для изображения" />
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Меловой период</h5>
+                                <p>
+                                    Меловой период: 145-65 миллионов лет назад.
+                                    Продолжался, таким образом, около 79 миллионов лет.
+                                    Самый продолжительный из периодов мезозойской эры.
+                                    Это закат великих гигантов Земли.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Inner -->
+                    <!-- Controls -->
+                    <button class="carousel-control-prev"
+                            type="button"
+                            data-mdb-target="#carouselBasicExample"
+                            data-mdb-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next"
+                            type="button"
+                            data-mdb-target="#carouselBasicExample"
+                            data-mdb-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- Carousel wrapper -->
+            </div>
+        </div>
+        <br>
+        <!-- Карусель - Кайнозойская Эра-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-outline-primary">
+                        Кайнозойская эра<br>
+                        от 66,0 до 0 млн. лет тому назад
+                    </button>
+                </div>
+
+                <div id="carouselExampleCrossfade"
+                     class="carousel slide carousel-fade"
+                     data-mdb-ride="carousel">
+
+                    <div class="carousel-indicators">
+                        <button type="button"
+                                data-mdb-target="#carouselExampleCrossfade"
+                                data-mdb-slide-to="0"
+                                class="active"
+                                aria-current="true"
+                                aria-label="Slide 1">
+
+                        </button>
+                        <button type="button"
+                                data-mdb-target="#carouselExampleCrossfade"
+                                data-mdb-slide-to="1"
+                                aria-label="Slide 2">
+
+                        </button>
+                        <button type="button"
+                                data-mdb-target="#carouselExampleCrossfade"
+                                data-mdb-slide-to="2"
+                                aria-label="Slide 3">
+
+                        </button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a asp-area="" asp-controller="Cenozoic_Era" asp-action="Paleogene_period">
+                                <img src="~/Images/Paleogene_period/PaleogenePeriod_heading1.jpg"
+                                     class="d-block w-100"
+                                     alt="Место для изображения" />
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Палеогеновый период</h5>
+                                <p>
+                                    Палеогеновый период: первый геологический период кайнозоя.
+                                    Начался 66,0 млн лет назад, закончился 23,03 млн лет назад.
+                                    Продолжался, таким образом, около 43 млн лет.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a asp-area="" asp-controller="Cenozoic_Era" asp-action="Neogene_period">
+                                <img src="~/Images/Neogene_period/NeogenePeriod_heading1.jpg"
+                                     class="d-block w-100"
+                                     alt="Место для изображения" />
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Неогеновый период</h5>
+                                <p>
+                                    Неогеновый период: геологический период, второй период кайнозойской эры.
+                                    Начался 23,03 млн лет назад, закончился 2,58 миллиона лет назад.
+                                    Продолжался, таким образом, около 20 миллионов лет.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <a asp-area="" asp-controller="Cenozoic_Era" asp-action="Quaternary_period">
+                                <img src="~/Images/Quaternary_period/Quaternary period_heading1.png"
+                                     class="d-block w-100"
+                                     alt="Место для изображения" />
+                            </a>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Четвертичный период</h5>
+                                <p>
+                                    Четвертичный период (антропоген): геологический период, современный
+                                    этап истории Земли, третий период кайнозойской эры.
+                                    Начался 2,588 миллиона лет назад, продолжается по сей день.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev"
+                            type="button"
+                            data-mdb-target="#carouselExampleCrossfade"
+                            data-mdb-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next"
+                            type="button"
+                            data-mdb-target="#carouselExampleCrossfade"
+                            data-mdb-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <wbr>
+</body>
+</html>

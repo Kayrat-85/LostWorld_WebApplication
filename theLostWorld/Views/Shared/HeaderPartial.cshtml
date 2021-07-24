@@ -1,0 +1,78 @@
+﻿<header>
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col-md-4">
+                <!-- Navbar brand -->
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="/Images/Header_Image/LostWorld01logo.png" width="120"
+                         class="d-inline-block align-content-center">
+                    <strong>the LostWorld</strong>
+                </a>
+            </div>
+        </div> 
+    </div>
+   <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-success">
+                <!-- Container wrapper -->
+           <div class="container">
+                <!-- Toggle button -->
+                <button class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent-333"
+                    aria-controls="navbarSupportedContent-333"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse justify-content-center" 
+                 id="navbarSupportedContent-333">
+                <!-- Left links -->
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                   
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">
+                            Главная
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" asp-area="" asp-controller="News" asp-action="NewsPage">
+                            Новости
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" id="navbarDropdownMenuLink" role="button"
+                           data-mdb-toggle="dropdown" aria-expanded="false">
+                            Динозавры
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" asp-area="" asp-controller="Dinosaurs" asp-action="Predators">Хищные</a></li>
+                            <li><a class="dropdown-item" asp-area="" asp-controller="Dinosaurs" asp-action="Herbivores">Травоядные</a></li>
+                            <li><a class="dropdown-item" asp-area="" asp-controller="Dinosaurs" asp-action="FlyingDinosaurs">Летающие</a></li>
+                            <li><a class="dropdown-item" asp-area="" asp-controller="Dinosaurs" asp-action="AquaticDinosaurs">Водные</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" id="navbarDropdownMenuLink" role="button"
+                           data-mdb-toggle="dropdown" aria-expanded="false">
+                            Млекопитающие
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" asp-area="" asp-controller="Mammals" asp-action="PredatorsMammals">Хищные</a></li>
+                            <li><a class="dropdown-item" asp-area="" asp-controller="Mammals" asp-action="HerbivoresMammals">Травоядные</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" asp-area="" asp-controller="Anthropogenesis" asp-action="AnthropogenesisPage">Антропогенез</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="AboutMe">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+           </div>
+        </nav>
+   </div>
+</header>

@@ -1,0 +1,55 @@
+﻿@model IQueryable<ServiceItem>
+@{
+    TextField textField = ViewBag.TextField;
+
+    ViewBag.Title = textField.MetaTitle;
+    ViewBag.Description = textField.MetaDescription;
+    ViewBag.Keywords = textField.MetaKeywords;
+}
+<wbr>
+<div class="container">
+    <div class="row">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Новости</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="row">
+
+        <div class="col-md-12">
+            <div>
+                @if (Model.Any())
+                {
+                    <div>
+                        @foreach (ServiceItem entity in Model)
+                        {
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">
+                                        <a asp-area="" asp-controller="News" asp-action="NewsPage" asp-route-id="@entity.Id">
+                                            @entity.Title
+                                        </a>
+                                    </h3>
+                                    <p class="card-text">
+                                        @entity.Subtitle
+                                    </p>
+                                </div>
+                                <a asp-area="" asp-controller="News" asp-action="NewsPage" asp-route-id="@entity.Id">
+                                    <img class="left" src="~/images/All_images/@entity.TitleImagePath" alt="" />
+                                </a>
+                                <a asp-area="" asp-controller="News" asp-action="NewsPage" asp-route-id="@entity.Id"
+                                   class="btn btn-outline-success btn-lg btn-block">Читать далее</a>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                            <wbr>
+
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

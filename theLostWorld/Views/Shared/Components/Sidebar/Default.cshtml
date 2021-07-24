@@ -1,0 +1,64 @@
+﻿@model IQueryable<ServiceItem>
+
+
+<wbr>
+<div class="card bg-light" data-spy="scroll" data-target="#card-example">
+    <div class="card-header text-center bg-secondary text-white border-dark">
+        <h4>НОВОЕ:</h4>
+    </div>
+    <div class="card-body bg-body text-center">
+        @if (Model?.Any() == true)
+        {
+            <section>
+                <div class="small-image-list">
+                    @foreach (ServiceItem entity in Model)
+                    {
+
+                        <h6>
+                            <a asp-area="" asp-controller="News" asp-action="NewsPage" asp-route-id="@entity.Id">
+                                @entity.Title
+                            </a>
+
+                        </h6>
+                        <a asp-area="" asp-controller="News" asp-action="NewsPage" asp-route-id="@entity.Id">
+                            <img src="~/images//All_images/@entity.TitleImagePath" alt="Место для изображения"
+                                 width="170" />
+                        </a>
+
+                        <p>
+                            @entity.Subtitle
+                        </p>
+
+                    }
+                </div>
+            </section>
+        }
+    </div>
+</div>
+<wbr>
+<!-- Search form -->
+<form class="d-flex input-group w-auto" action="http://google.com/search" target="_blank">
+    <input type="search"
+           class="form-control"
+           placeholder="Поиск"
+           aria-label="Search"
+           name="q" />
+    <input type="hidden" name="as_sitesearch" value="lostworld.kz">
+    <button class="btn btn-danger text-white my-2 my-sm-0"
+            type="submit"
+            data-mdb-ripple-color="dark">
+        Поиск
+    </button>
+</form>
+<wbr>
+<div class="card bg-light" data-spy="scroll" data-target="#card-example">
+    <div class="card-header text-center bg-secondary text-white border-dark">
+        <h4>Реклама:</h4>
+    </div>
+    <div class="card-body bg-body text-center">
+        <img src="~/Images/Reklama/reklama01.png" alt="Изображение" width="200" />
+    </div>
+</div>
+<wbr>
+
+
