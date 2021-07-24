@@ -1,0 +1,63 @@
+﻿/* Боковое меню */
+.sidenav-link {
+    margin: 0;
+    padding: 0;
+    left: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Сайдбар ссылки */
+    .sidenav-link a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    /* Активная/текущая ссылка */
+        .sidenav-link a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+    /* Ссылки при наведении мыши */
+        .sidenav-link a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+/* Содержание страницы. Значение свойства margin-left должно соответствовать значению свойства width боковой панели */
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+/* На экранах шириной менее 700 пикселей превратить боковую панель в верхнюю панель */
+@media screen and (max-width: 700px) {
+    .sidenav-link {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+        .sidenav-link a {
+            float: left;
+        }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+/* На экранах размером менее 400 пикселей панель отображать вертикально, а не горизонтально */
+@media screen and (max-width: 400px) {
+    .sidenav-link a {
+        text-align: center;
+        float: none;
+    }
+}

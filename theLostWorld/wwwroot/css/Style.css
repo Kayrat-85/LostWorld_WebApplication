@@ -1,0 +1,33 @@
+﻿/*
+    Здесь задается цвет ссылок 
+*/
+a {
+    color: #000000;
+    text-decoration: none
+}
+
+    a:active {
+        color: #000000;
+        text-decoration: none
+    }
+
+    a:visited {
+        color: #666666;
+        text-decoration: none
+    }
+
+    a:hover {
+        color: #339900;
+        text-decoration: underline
+    }
+
+    div.field {
+        padding-bottom: 5px;
+    }
+
+    div.field label {
+        display: block;
+        float: left;
+        width: 70px;
+        height: 15px;
+    }
