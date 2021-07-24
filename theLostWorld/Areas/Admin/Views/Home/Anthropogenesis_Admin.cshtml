@@ -1,0 +1,75 @@
+﻿@model IQueryable<Anthropogenesis>
+@{
+    string strTitle = "Панель Редактирования";
+    ViewBag.Title = strTitle;
+}
+
+<div class="container">
+    <wbr>
+    <div class="row">
+        <div class="col-md-3">
+            <!--Эта колонка для смещения, надписи: Панель администратора-->
+        </div>
+        <div class="col-md-7">
+            <span class="badge bg-secondary text-white"><h2>Панель администратора</h2></span>
+        </div>
+    </div>
+    <wbr>
+    <div class="row">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Aдмин панель</a></li>
+                <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="EditPanel" asp-action="Anthropogenesis_admin">Вкладка: Антропогенез</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Антропогенез: Гоминиды</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <!--Эта колонка для смещения карты по центру-->
+        </div>
+        <div class="col-md-7">
+            <div class="card text-center bg-light border-dark">
+                <div class="card-header bg-danger text-white border-dark">
+                    Антропогенез: Гоминиды
+                </div>
+                <div class="card-body bg-body">
+                    <p class="card-text">Напишите новую статью</p>
+                    <a asp-area="Admin" asp-controller="Anthropogenesis" asp-action="Edit" asp-route-id="" class="btn btn-outline-warning">Добавить статью</a>
+                    <div class="div-box">
+                        @if (Model.Any())
+                        {
+                            <div>
+                                @foreach (Anthropogenesis entity in Model)
+                                {
+                                    <div>
+                                        <a asp-area="Admin" asp-controller="Anthropogenesis" asp-action="Edit" asp-route-id="@entity.Id">редактировать</a>
+                                        |
+                                        <form style="display: inline-block;" id="form-@entity.Id" 
+                                              asp-area="Admin" asp-controller="Anthropogenesis" asp-action="Delete" method="post">
+                                            <input type="hidden" name="id" value="@entity.Id">
+                                            <a href="#" onclick="document.getElementById('form-@entity.Id').submit();">удалить</a>
+                                        </form>
+                                        |
+                                        <a asp-area="" asp-controller="Anthropogenesis" asp-action="AnthropogenesisPage" asp-route-id="@entity.Id">
+                                            @($"{entity.Title}")
+                                        </a>
+                                    </div>
+                                }
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="card-footer text-secondary border-dark">
+                    <div class="div-box">
+                        <h5>Редактировать</h5>
+                        <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageAnthropogenesis">Антропогенез - Гоминиды</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<wbr>

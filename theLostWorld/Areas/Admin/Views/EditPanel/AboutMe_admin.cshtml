@@ -1,0 +1,66 @@
+﻿<div class="container">
+    <wbr>
+    <div class="row">
+        <div class="col-md-3">
+            <!--Эта колонка для смещения, надписи: Панель администратора-->
+        </div>
+        <div class="col-md-7">
+            <span class="badge bg-secondary text-white">
+                <h2>Панель администратора</h2>
+            </span>
+        </div>
+    </div>
+    <wbr>
+    <div class="row">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Aдмин панель</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<wbr>
+<div class="container">
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Информация обо мне и проекте</h4>
+        <p>
+            Здесь можно отредактировать текст вкладку "Контакты".
+            Здесь публикуется личная или профессиональная информация.
+            Также редактируется страница "О проекте".
+        </p>
+        <hr>
+    </div>
+</div>
+
+<wbr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-center bg-light border-dark" style="width: auto;">
+                <div class="card-body">
+                    <h5 class="card-title">Контакты</h5>
+                    <p class="card-text">
+                        Здесь можно отредактировать текст "Контакты".
+                        Опубликовать личную или профессиональную информацию. 
+                    </p>
+                    <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageAboutMe" class="btn btn-outline-warning">Редактировать</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center bg-light border-dark" style="width: auto;">
+                <div class="card-body">
+                    <h5 class="card-title">О проекте</h5>
+                    <p class="card-text">
+                        Здесь можно отредактировать текст "О проекте".
+                        Опубликовать информацию о проекте. Также можно рассказать о планах проекта
+                    </p>
+                    <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageMyWebProject" class="btn btn-outline-warning">Редактировать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<wbr>
+

@@ -1,0 +1,83 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<body class="bg-light">
+
+    <div class="container">
+        <wbr>
+        <div class="row">
+            <div class="col-md-3">
+                <!--Эта колонка для смещения, надписи: Панель администратора-->
+            </div>
+            <div class="col-md-7">
+                <span class="badge bg-secondary text-white"><h2>Панель администратора</h2></span>
+            </div>
+        </div>
+        
+        <wbr>
+        <div class="row">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Aдмин панель</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Вкладка: Главная</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card text-center bg-light border-dark">
+                    <div class="card-header bg-danger text-white border-dark">
+                        Редактировать: главную страницу
+                    </div>
+                    <div class="card-body bg-body">
+                        <h5 class="card-title">Мезозойская эра</h5>
+                        <p class="card-text">Главная страница: "карусель-компонент" - Мезозойская эра</p>
+                        <a asp-area="Admin" asp-controller="EditPanel" asp-action="Mesozoic_admin" class="btn btn-outline-warning">Редактировать</a>
+                    </div>
+                    <div class="card-footer text-danger border-dark">
+                        2021
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card text-center bg-light border-dark">
+                    <div class="card-header bg-danger text-white border-dark">
+                        Редактировать: главную страницу
+                    </div>
+                    <div class="card-body bg-body">
+                        <h5 class="card-title">Кайнозойская эра</h5>
+                        <p class="card-text">Главная страница: "карусель-компонент" - Кайнозойская эра</p>
+                        <a asp-area="Admin" asp-controller="EditPanel" asp-action="Cenozoic_admin" class="btn btn-outline-warning">Редактировать</a>
+                    </div>
+                    <div class="card-footer text-danger border-dark">
+                        2021
+                    </div>
+                </div>
+            </div>
+        </div>
+        <wbr>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card text-center bg-light border-dark">
+                    <div class="card-header bg-danger text-white border-dark">
+                        Редактировать: главную страницу
+                    </div>
+                    <div class="card-body bg-body">
+                        <h5 class="card-title">Палеозойская Эра</h5>
+                        <p class="card-text">Главная страница: "карусель-компонент" - Палеозойская Эра</p>
+                        <a asp-area="Admin" asp-controller="EditPanel" asp-action="Paleozoic_admin" class="btn btn-outline-warning">Редактировать</a>
+                    </div>
+                    <div class="card-footer text-danger border-dark">
+                        2021
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <wbr>
+
+   
+</body>
+</html>

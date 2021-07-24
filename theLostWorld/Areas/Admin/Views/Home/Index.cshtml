@@ -1,0 +1,132 @@
+﻿@model IQueryable<ServiceItem>
+@{
+    string strTitle = "Панель администратора";
+    ViewBag.Title = strTitle;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body class="bg-light">
+
+    <div class="container">
+        <wbr>
+        <div class="row">
+            <span class="badge bg-secondary"><h2>@strTitle</h2></span>
+        </div>
+        <wbr>
+        <div class="row">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Aдмин панель</li>
+                </ol>
+            </nav>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center bg-light border-dark">
+                    <div class="card-header bg-danger text-white border-dark">
+                        Вкладка: Главная
+                    </div>
+                    <div class="card-body bg-body">
+                        <!--<h5 class="card-title">Редактировать</h5>-->
+                        <p class="card-text">Начните редактировать вкладку "Главная"</p>
+                        <a asp-area="Admin" asp-controller="EditPanel" asp-action="Homepage_admin" class="btn btn-outline-warning">Редактировать</a>
+                    </div>
+                    <div class="card-footer text-danger border-dark">
+                        2021
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center bg-light border-dark">
+                    <div class="card-header bg-danger text-white border-dark">
+                        Вкладка: Новости
+                    </div>
+                    <div class="card-body bg-body">
+                        <p class="card-text">Начните редактировать вкладку "Новости"</p>
+                        <a asp-area="Admin" asp-controller="EditPanel" asp-action="News_admin" class="btn btn-outline-warning">Редактировать</a>
+                    </div>
+                    <div class="card-footer text-danger border-dark">
+                        2021
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center bg-light border-dark">
+                    <div class="card-header bg-danger text-white border-dark">
+                        Вкладка: Динозавры
+                    </div>
+                    <div class="card-body bg-body">
+                        <p class="card-text">Начните редактировать вкладку "Динозавры"</p>
+                        <a asp-area="Admin" asp-controller="EditPanel" asp-action="Dinosaurs_admin" class="btn btn-outline-warning">Редактировать</a>
+                    </div>
+                    <div class="card-footer text-danger border-dark">
+                        2021
+                    </div>
+                </div>
+            </div>
+        </div>
+        <wbr>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center bg-light border-dark">
+                    <div class="card-header bg-danger text-white border-dark">
+                        Вкладка: Млекопитающие
+                    </div>
+                    <div class="card-body bg-body">
+                        <p class="card-text">Начните редактировать вкладку "Млекопитающие"</p>
+                        <a asp-area="Admin" asp-controller="EditPanel" asp-action="Mammals_admin" class="btn btn-outline-warning">Редактировать</a>
+                    </div>
+                    <div class="card-footer text-danger border-dark">
+                        2021
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center bg-light border-dark">
+                    <div class="card-header bg-danger text-white border-dark">
+                        Вкладка: Антропогенез
+                    </div>
+                    <div class="card-body bg-body">
+                        <p class="card-text">Начните редактировать вкладку "Антропогенез"</p>
+                        <a asp-area="Admin" asp-controller="EditPanel" asp-action="Anthropogenesis_admin" class="btn btn-outline-warning">Редактировать</a>
+                    </div>
+                    <div class="card-footer text-danger border-dark">
+                        2021
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center bg-light border-dark">
+                    <div class="card-header bg-danger text-white border-dark">
+                        Вкладка: Контакты
+                    </div>
+                    <div class="card-body bg-body">
+                        <p class="card-text">Начните редактировать вкладку "Контакты"</p>
+                        <a asp-area="Admin" asp-controller="EditPanel" asp-action="AboutMe_admin" class="btn btn-outline-warning">Редактировать</a>
+                    </div>
+                    <div class="card-footer text-danger border-dark">
+                        2021
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <wbr>
+    <div class="row">
+        <span class="badge bg-secondary">
+            <div>
+                <form asp-area="" asp-controller="Account" asp-action="Logout" method="post">
+                    <input class="btn btn-danger" type="submit" value="Выйти" />
+                </form>
+            </div>
+        </span>
+    </div>
+    <wbr>
+</body>
+</html>
+
+

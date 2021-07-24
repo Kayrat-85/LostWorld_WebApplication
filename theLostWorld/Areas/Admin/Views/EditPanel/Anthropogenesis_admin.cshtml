@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<body>
+    <div class="container">
+        <wbr>
+        <div class="row">
+            <div class="col-md-3">
+                <!--Эта колонка для смещения, надписи: Панель администратора-->
+            </div>
+            <div class="col-md-7">
+                <span class="badge bg-secondary text-white"><h2>Панель администратора</h2></span>
+            </div>
+        </div>
+        <wbr>
+        <div class="row">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Aдмин панель</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Вкладка: Антропогенез</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <wbr>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <!--сдвиг вправо-->
+            </div>
+            <div class="col-md-7">
+                <div class="card text-center bg-light border-dark">
+                    <div class="card-header bg-danger text-white border-dark">
+                        Вкладка: Антропогенез
+                    </div>
+                    <div class="card-body bg-body">
+                        <h5 class="card-title">Эволюция человека</h5>
+                        <p class="card-text">Редактируем вкладку "Антропогенез" - Гоминиды</p>
+                        <a asp-area="Admin" asp-controller="Home" asp-action="Anthropogenesis_Admin" class="btn btn-outline-warning">Редактировать</a>
+                    </div>
+                    <div class="card-footer text-danger border-dark">
+                        2021
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <wbr>
+</body>
+
+</html>
+
+
+

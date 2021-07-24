@@ -1,0 +1,79 @@
+﻿<div class="container">
+    <wbr>
+    <div class="row">
+        <div class="col-md-3">
+            <!--Эта колонка для смещения, надписи: Панель администратора-->
+        </div>
+        <div class="col-md-7">
+            <span class="badge bg-secondary text-white">
+                <h2>Панель администратора</h2>
+            </span>
+        </div>
+    </div>
+    <wbr>
+    <div class="row">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Aдмин панель</a></li>
+                <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="EditPanel" asp-action="Homepage_admin">Вкладка: Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Кайнозойская эра</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<wbr>
+<div class="container">
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Кайнозойская эра</h4>
+        <p>
+            Здесь можно отредактировать текст "карусель - Кайнозойская эра", домашней страницы сайта.
+            Доступны три эпохи. Выбор необходимой эпохи, определяется нажатием кнопки.
+        </p>
+        <hr>
+    </div>
+</div>
+<wbr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-center bg-light border-dark" style="width: auto;">
+                <img src="~/Images/Paleogene_period/PaleogenePeriod_heading1.jpg" class="card-img-top" alt="Место для изображения">
+                <div class="card-body">
+                    <h5 class="card-title">Палеогеновый период</h5>
+                    <p class="card-text">
+                        Здесь можно отредактировать текст "Палеогеновый период".
+                        Первый период "карусель - Кайнозойская эра", домашней страницы сайта.
+                    </p>
+                    <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PagePaleogene" class="btn btn-outline-warning">Редактировать</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center bg-light border-dark" style="width: auto;">
+                <img src="~/Images/Neogene_period/NeogenePeriod_heading1.jpg" class="card-img-top" alt="Место для изображения">
+                <div class="card-body">
+                    <h5 class="card-title">Неогеновый период</h5>
+                    <p class="card-text">
+                        Здесь можно отредактировать текст "Неогеновый период".
+                        Второй период "карусель - Кайнозойская эра", домашней страницы сайта.
+                    </p>
+                    <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageNeogene" class="btn btn-outline-warning">Редактировать</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center bg-light border-dark" style="width: auto;">
+                <img src="~/Images/Quaternary_period/Quaternary period_heading1.png" class="card-img-top" alt="Место для изображения">
+                <div class="card-body">
+                    <h5 class="card-title">Четвертичный период</h5>
+                    <p class="card-text">
+                        Здесь можно отредактировать текст "Четвертичный период".
+                        Третий период "карусель - Кайнозойская эра", домашней страницы сайта.
+                    </p>
+                    <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageQuaternary" class="btn btn-outline-warning">Редактировать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<wbr>

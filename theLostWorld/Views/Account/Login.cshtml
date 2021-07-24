@@ -1,0 +1,42 @@
+﻿@model LoginViewModel
+
+
+<div class="container">
+    <wbr>
+    <div class="row">
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-center text-danger">
+                    <h4>Вход в личный кабинет</h4>
+                </div>
+                <div class="card-body ">
+                    <form asp-area="" asp-controller="Account" asp-action="Login" method="post" asp-route-returnUrl="@ViewBag.returnUrl">
+                        <div asp-validation-summary="All"></div>
+                        <div class="mb-3">
+                            <label class="form-label" asp-for="UserName"></label>
+                            <input class="form-control" asp-for="UserName" />
+                            <span asp-validation-for="UserName"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" asp-for="Password"></label>
+                            <input type="password" class="form-control" asp-for="Password" />
+                            <span asp-validation-for="Password"></span>
+                        </div>
+                        <div class="col-auto">
+                            <input type="checkbox" class="form-check-input" asp-for="RememberMe" />
+                            <span asp-validation-for="RememberMe"></span>
+                            <label class="form-check-label" asp-for="RememberMe"></label>
+                        </div>
+                        <wbr>
+                        <div>
+                            <input class="btn btn-primary" type="submit" value="Войти" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

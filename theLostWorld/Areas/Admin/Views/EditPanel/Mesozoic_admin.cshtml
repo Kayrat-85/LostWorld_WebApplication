@@ -1,0 +1,80 @@
+﻿<div class="container">
+    <wbr>
+    <div class="row">
+        <div class="col-md-3">
+            <!--Эта колонка для смещения, надписи: Панель администратора-->
+        </div>
+        <div class="col-md-7">
+            <span class="badge bg-secondary text-white">
+                <h2>Панель администратора</h2>
+            </span>
+        </div>
+    </div>
+    <wbr>
+    <div class="row">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Aдмин панель</a></li>
+                <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="EditPanel" asp-action="Homepage_admin">Вкладка: Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Мезозойская эра</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<wbr>
+<div class="container">
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Мезозойская эра</h4>
+        <p>
+            Здесь можно отредактировать текст "карусель - Мезозойская эра", домашней страницы сайта.
+            Доступны три эпохи. Выбор необходимой эпохи, определяется нажатием кнопки.
+        </p>
+        <hr>
+    </div>
+</div>
+
+<wbr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-center bg-light border-dark" style="width: auto;">
+                <img src="~/Images/Triassic_period/TriassicPeriod_heading1.jpg" class="card-img-top" alt="Место для изображения">
+                <div class="card-body">
+                    <h5 class="card-title">Триасовый период</h5>
+                    <p class="card-text">
+                        Здесь можно отредактировать текст "Триасовый период".
+                        Первый период "карусель - Мезозойская эра", домашней страницы сайта.
+                    </p>
+                    <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageTriassic" class="btn btn-outline-warning">Редактировать</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center bg-light border-dark" style="width: auto;">
+                <img src="~/Images/Jurassic_period/JurassicPeriod_heading1.jpg" class="card-img-top" alt="Место для изображения">
+                <div class="card-body">
+                    <h5 class="card-title">Юрский период</h5>
+                    <p class="card-text">
+                        Здесь можно отредактировать текст "Юрский период".
+                        Второй период "карусель - Мезозойская эра", домашней страницы сайта.
+                    </p>
+                    <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageJurassic" class="btn btn-outline-warning">Редактировать</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center bg-light border-dark" style="width: auto;">
+                <img src="~/Images/Cretaceous_period/CretaceousPeriod_heading1.jpg" class="card-img-top" alt="Место для изображения">
+                <div class="card-body">
+                    <h5 class="card-title">Меловой период</h5>
+                    <p class="card-text">
+                        Здесь можно отредактировать текст "Меловой период".
+                        Третий период "карусель - Мезозойская эра", домашней страницы сайта.
+                    </p>
+                    <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageCretaceous" class="btn btn-outline-warning">Редактировать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<wbr>

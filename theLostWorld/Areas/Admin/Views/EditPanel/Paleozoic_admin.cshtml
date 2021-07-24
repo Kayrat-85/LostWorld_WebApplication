@@ -1,0 +1,122 @@
+﻿<div class="container">
+    <wbr>
+    <div class="row">
+        <div class="col-md-3">
+            <!--Эта колонка для смещения, надписи: Панель администратора-->
+        </div>
+        <div class="col-md-7">
+            <span class="badge bg-secondary text-white">
+                <h2>Панель администратора</h2>
+            </span>
+        </div>
+    </div>
+    <wbr>
+    <div class="row">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="Home" asp-action="Index">Aдмин панель</a></li>
+                <li class="breadcrumb-item"><a asp-area="Admin" asp-controller="EditPanel" asp-action="Homepage_admin">Вкладка: Главная</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Палеозойская Эра</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<wbr>
+<div class="container">
+    <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Палеозойская Эра</h4>
+        <p>
+            Здесь можно отредактировать текст "карусель - Палеозойская Эра", домашней страницы сайта.
+            Доступны шесть эпох. Выбор необходимой эпохи, определяется нажатием кнопки.
+        </p>
+        <hr>
+    </div>
+</div>
+
+<wbr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-center bg-light border-dark" style="width: auto;">
+                <img src="~/Images/Paleozoic_Era/Cambrian_period01.jpg" class="card-img-top" alt="Место для изображения">
+                <div class="card-body">
+                    <h5 class="card-title">Кембрийский период</h5>
+                    <p class="card-text">
+                        Здесь можно отредактировать текст "Кембрийский период".
+                        Первый период "карусель - Палеозойская Эра", домашней страницы сайта.
+                    </p>
+                    <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageCambrian" class="btn btn-outline-warning">Редактировать</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center bg-light border-dark" style="width: auto;">
+                <img src="~/Images/Paleozoic_Era/Ordovician-Period.jpg" class="card-img-top" alt="Место для изображения">
+                <div class="card-body">
+                    <h5 class="card-title">Ордовикский период</h5>
+                    <p class="card-text">
+                        Здесь можно отредактировать текст "Ордовикский период".
+                        Второй период "карусель - Палеозойская Эра", домашней страницы сайта.
+                    </p>
+                    <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageOrdovician" class="btn btn-outline-warning">Редактировать</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center bg-light border-dark" style="width: auto;">
+                <img src="~/Images/Paleozoic_Era/Silurian_Period01.jpg" class="card-img-top" alt="Место для изображения">
+                <div class="card-body">
+                    <h5 class="card-title">Силурийский период</h5>
+                    <p class="card-text">
+                        Здесь можно отредактировать текст "Силурийский период".
+                        Третий период "карусель - Палеозойская Эра", домашней страницы сайта.
+                    </p>
+                    <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageSilurian" class="btn btn-outline-warning">Редактировать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card text-center bg-light border-dark" style="width: auto;">
+                <img src="~/Images/Paleozoic_Era/Devonian_period01.jpg" class="card-img-top" alt="Место для изображения">
+                <div class="card-body">
+                    <h5 class="card-title">Девонский период</h5>
+                    <p class="card-text">
+                        Здесь можно отредактировать текст "Девонский период".
+                        Четвертый период "карусель - Палеозойская Эра", домашней страницы сайта.
+                    </p>
+                    <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageDevonian" class="btn btn-outline-warning">Редактировать</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center bg-light border-dark" style="width: auto;">
+                <img src="~/Images/Paleozoic_Era/Carboniferous_period01.jpg" class="card-img-top" alt="Место для изображения">
+                <div class="card-body">
+                    <h5 class="card-title">Каменноугольный период</h5>
+                    <p class="card-text">
+                        Здесь можно отредактировать текст "Каменноугольный период".
+                        Пятый период "карусель - Палеозойская Эра", домашней страницы сайта.
+                    </p>
+                    <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PageCarboniferous" class="btn btn-outline-warning">Редактировать</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center bg-light border-dark" style="width: auto;">
+                <img src="~/Images/Paleozoic_Era/Permian_period01.jpg" class="card-img-top" alt="Место для изображения">
+                <div class="card-body">
+                    <h5 class="card-title">Пермский период</h5>
+                    <p class="card-text">
+                        Здесь можно отредактировать текст "Пермский период".
+                        Шестой период "карусель - Палеозойская Эра", домашней страницы сайта.
+                    </p>
+                    <a asp-area="Admin" asp-controller="TextFields" asp-action="Edit" asp-route-codeWord="PagePermian" class="btn btn-outline-warning">Редактировать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<wbr>
+
