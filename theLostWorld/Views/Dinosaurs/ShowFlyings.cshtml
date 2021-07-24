@@ -1,0 +1,36 @@
+﻿@model DinosaursFlying
+@{
+    ViewBag.Title = Model.MetaTitle;
+    ViewBag.Description = Model.MetaDescription;
+    ViewBag.Keywords = Model.MetaKeywords;
+}
+
+<wbr>
+<div class="container">
+    <div class="row">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a asp-area="" asp-controller="Home" asp-action="Index">Главная</a></li>
+                <li class="breadcrumb-item"><a href="FlyingDinosaurs.cshtml">Летающие динозавры</a></li>
+                <li class="breadcrumb-item active" aria-current="page">@Model.Title</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="row">
+        <div>
+            <h2>
+                @Model.Title
+            </h2>
+            <h4>
+                @Model.Subtitle
+            </h4>
+            <div>
+                <img class="img-block" src="~/images/All_images/@Model.TitleImagePath" />
+            </div>
+        </div>
+        <div>
+            @Html.Raw(Model.Text)
+        </div>
+    </div>
+</div>
+<wbr>
